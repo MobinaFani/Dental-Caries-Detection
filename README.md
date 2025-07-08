@@ -92,8 +92,10 @@ Python & Deep Learning Enthusiast 💻
 
 🗂 Notes
 	•	Make sure you have access to your dataset on Google Drive.
-	•	Requires: TensorFlow, Keras, matplotlib, and Colab environment.
+	•	Requires: TensorFlow, Keras, matplotlib, and Google Colab environment.
 
 📎 License
 
-This project is released for educational and academic use only.
+This project is released for educational and academic use only
+
+
