@@ -7,9 +7,8 @@ Developed in **Google Colab** using **Transfer Learning (VGG16)** and **TensorFl
 
 ## 📌 Project Overview
 
-This project uses a pre-trained **VGG16** model (with ImageNet weights) and fine-tunes it to classify dental images as either **Caries (decayed)** or **Healthy**.
-
-The model is trained on images stored in a custom dataset hosted on **Google Drive**.
+This project uses a pre-trained **VGG16** model (with ImageNet weights) and fine-tunes it to classify dental images as either **Caries (decayed)** or **Healthy**.  
+The model is trained on a custom dataset stored in **Google Drive**.
 
 ---
 
@@ -25,13 +24,13 @@ The model is trained on images stored in a custom dataset hosted on **Google Dri
 - **Optimizer**: Adam
 - **Metrics**: Accuracy
 
-The VGG16 base is frozen during training to leverage its pre-learned features.
+⚠️ The VGG16 base is frozen during training to leverage pre-learned features.
 
 ---
 
 ## 📁 Dataset
 
-The dataset used for training and testing this model is stored in Google Drive.
+The dataset used for training and testing is stored in Google Drive:
 
 👉 [Click here to view/download the dataset](https://drive.google.com/drive/folders/1is5LAMJVoyQ_DFK_OoYdt3n6CNdxJhj-)
 
@@ -41,9 +40,10 @@ Make sure you mount your Google Drive in Google Colab before accessing the datas
 from google.colab import drive
 drive.mount('/content/drive')
 
-## 🧪 Dataset Structure
+🧪 Dataset Structure
 
-The dataset should be structured as:
+The dataset should be organized like this:
+
 Dental_dir/
 │
 ├── Train_dir/
@@ -55,44 +55,40 @@ Dental_dir/
 │   └── Caries/
 │
 └── Validation_dir/
-├── Healthy/
-└── Caries/
+    ├── Healthy/
+    └── Caries/
 
-Images will be automatically resized to **230x230** during preprocessing.
+🖼️ Images will be automatically resized to 230x230 during preprocessing.
 
----
+📊 Training & Validation
+	•	Epochs: 24
+	•	Batch size: 20
+	•	Data augmentation: rotation, zoom, shift, shear
+	•	Accuracy and loss are plotted after training using matplotlib
 
-## 📊 Training & Validation
+🚀 How to Run
 
-- Epochs: 24  
-- Batch size: 20  
-- Data augmentation used (rotation, zoom, shift, shear)  
-- Accuracy and loss plots are displayed after training.
+This project is designed to run in Google Colab.
 
----
+Steps:
+	1.	Mount your Google Drive:
 
-## 🚀 How to Run
+from google.colab import drive
+drive.mount('/content/drive')
 
-This project is designed to be run in **Google Colab**.
 
-### Steps:
+	2.	Prepare your dataset in the correct directory format inside Drive.
+	3.	Run all cells in the notebook.
 
-1. Mount Google Drive:
-   ```python
-   from google.colab import drive
-   drive.mount('/content/drive')
- 2.	Clone the dataset into appropriate folders (Train_dir, Test_dir, Validation_dir)
-   
- 3.	Run all cells in the notebook
- 
 📈 Sample Output
 
-Training & validation accuracy and loss curves are plotted using matplotlib after training.
+Training and validation accuracy/loss curves are shown after training.
 
 👩🏻‍💻 Author
 
 Mobina Fani
-Python & Deep Learning Enthusiast
+Python & Deep Learning Enthusiast 💻
+🌱 Learning with passion | Dreaming big
 
 🗂 Notes
 	•	Make sure you have access to your dataset on Google Drive.
@@ -100,4 +96,4 @@ Python & Deep Learning Enthusiast
 
 📎 License
 
-This project is released for educational and academic use only
+This project is released for educational and academic use only.
