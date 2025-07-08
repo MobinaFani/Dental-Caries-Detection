@@ -41,8 +41,6 @@ Make sure you mount your Google Drive in Google Colab before accessing the datas
 from google.colab import drive
 drive.mount('/content/drive')
 
----
-
 ## 🧪 Dataset Structure
 
 The dataset should be structured as:
