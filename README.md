@@ -27,7 +27,6 @@ The model is trained on a custom dataset stored in **Google Drive**.
 ⚠️ The VGG16 base is frozen during training to leverage pre-learned features.
 
 ---
-
 ## 📁 Dataset
 
 The dataset used for training and testing is stored in Google Drive:
@@ -96,6 +95,7 @@ Python & Deep Learning Enthusiast 💻
 
 📎 License
 
-This project is released for educational and academic use only
+This project is released for educational and academic use only.
+
 
 
