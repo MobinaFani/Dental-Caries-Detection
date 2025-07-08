@@ -28,6 +28,7 @@ The model is trained on images stored in a custom dataset hosted on **Google Dri
 The VGG16 base is frozen during training to leverage its pre-learned features.
 
 ---
+
 ## 📁 Dataset
 
 The dataset used for training and testing this model is stored in Google Drive.
@@ -39,6 +40,7 @@ Make sure you mount your Google Drive in Google Colab before accessing the datas
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
+
 ---
 
 ## 🧪 Dataset Structure
