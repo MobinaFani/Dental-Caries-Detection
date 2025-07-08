@@ -1,3 +1,4 @@
+
 # 🦷 Dental Caries Detection using Deep Learning
 
 A deep learning project for binary classification of dental images to detect caries (tooth decay).  
@@ -27,6 +28,7 @@ The model is trained on a custom dataset stored in **Google Drive**.
 ⚠️ The VGG16 base is frozen during training to leverage pre-learned features.
 
 ---
+
 ## 📁 Dataset
 
 The dataset used for training and testing is stored in Google Drive:
@@ -35,14 +37,18 @@ The dataset used for training and testing is stored in Google Drive:
 
 Make sure you mount your Google Drive in Google Colab before accessing the dataset:
 
-```python
+```
 from google.colab import drive
 drive.mount('/content/drive')
+```
 
-🧪 Dataset Structure
+---
+
+## 🧪 Dataset Structure
 
 The dataset should be organized like this:
 
+```
 Dental_dir/
 │
 ├── Train_dir/
@@ -56,46 +62,61 @@ Dental_dir/
 └── Validation_dir/
     ├── Healthy/
     └── Caries/
+```
 
-🖼️ Images will be automatically resized to 230x230 during preprocessing.
+🖼️ Images will be automatically resized to **230x230** during preprocessing.
 
-📊 Training & Validation
-	•	Epochs: 24
-	•	Batch size: 20
-	•	Data augmentation: rotation, zoom, shift, shear
-	•	Accuracy and loss are plotted after training using matplotlib
+---
 
-🚀 How to Run
+## 📊 Training & Validation
 
-This project is designed to run in Google Colab.
+- **Epochs**: 24  
+- **Batch size**: 20  
+- **Data augmentation**: rotation, zoom, shift, shear  
+- Accuracy and loss are plotted after training using `matplotlib`.
 
-Steps:
-	1.	Mount your Google Drive:
+---
 
-from google.colab import drive
-drive.mount('/content/drive')
+## 🚀 How to Run
 
+This project is designed to run in **Google Colab**.
 
-	2.	Prepare your dataset in the correct directory format inside Drive.
-	3.	Run all cells in the notebook.
+### Steps:
 
-📈 Sample Output
+1. Mount your Google Drive:
+
+   ```
+   from google.colab import drive  
+   drive.mount('/content/drive')
+   ```
+
+2. Prepare your dataset in the correct directory format inside Drive.
+
+3. Run all cells in the notebook.
+
+---
+
+## 📈 Sample Output
 
 Training and validation accuracy/loss curves are shown after training.
 
-👩🏻‍💻 Author
+---
 
-Mobina Fani
-Python & Deep Learning Enthusiast 💻
+## 👩🏻‍💻 Author
+
+**Mobina Fani**  
+Python & Deep Learning Enthusiast 💻  
 🌱 Learning with passion | Dreaming big
 
-🗂 Notes
-	•	Make sure you have access to your dataset on Google Drive.
-	•	Requires: TensorFlow, Keras, matplotlib, and Google Colab environment.
+---
 
-📎 License
+## 🗂 Notes
+
+- Make sure you have access to your dataset on Google Drive.  
+- Requires: TensorFlow, Keras, matplotlib, and Google Colab environment.
+
+---
+
+## 📎 License
 
 This project is released for educational and academic use only.
-
-
-
